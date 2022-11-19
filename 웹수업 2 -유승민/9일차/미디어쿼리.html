@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리</title>
+    <style>
+
+        /* * 반응형
+        => 각 디바이스 기기마다 크기가 다 다르므로,
+        만든 홈페이지 디자인이 변함없이 비율에 맞게 줄어들도록 작업
+        => 화면의 해상도에 따라 페이지를 다르게 보여줌
+        (css 미디어쿼리 활용) */
+
+        /* * 미디어쿼리
+        => 화면의 해상도에 따라 페이지를 다르게 보여줌
+
+        @media 미디어유형 and (조건1) and (조건2){
+            선택자{
+                스타일
+            }
+
+        } */
+
+        /* * max-width
+        => 최대 허용 가로값
+        * min-width
+        =>최소 허용 가로값
+
+        * 기기들에 대한 사이즈
+                         max                  min
+        pc (최대 사이즈는 따로 잡지 않음) ~ 1200px(최소 사이즈)
+        노트북          1200px               ~ 960px
+        테블릿          960px                ~ 760px
+        모바일          760px                ~ */
+
+        /* * 미디어 유형
+        => all : 모든 미디어 장치 (기본값)
+        => screen : 컴퓨터, 태블릿, 모바일 등
+        => print : 인쇄기기 */
+
+        /* * 주의점
+        => 화면을 볼 때 브라우저 화면 작게 하거나 축소하거나 확대해서 보지 않기
+        => media 조건 띄어쓰기 꼭 해야 함 (뭔가 나올 때마다 꼭 띄어쓰기를 해야 함)
+        => media 안의 size에 px 단위 반드시 적기
+        => media 안의 size의 괄호 안에 세미콜론 넣는 것은 안됨
+        => 미디어쿼리 안에 들어가지 않는 선택자들은
+        어떤 사이즈가 되든 절대 바뀌지 않는 것들
+        (그럼 초기값들은 미디어쿼리 밖으로 적어주는 것이 좋음) */
+
+        * { padding:0; margin:0; }
+
+        @media all and (min-width: 1200px) { 
+            #box {
+                width:1200px;
+                height:500px;
+                margin:100px auto;
+                background-color:aquamarine;
+            }
+
+        } /* pc end */
+
+        @media all and (max-width:1199px) and (min-width:960px) {
+            #box {
+                width:960px;
+                height:600px;
+                margin:100px auto;
+                background-color:crimson;
+            }
+
+        } /* note end */
+
+        @media all and (max-width: 959px) and (min-width:760px) {
+            #box {
+                width:760px;
+                height:300px;
+                margin:0 auto;
+                background-color:chartreuse;
+            }
+
+        } /* tab end */
+
+        @media all and (max-width:759px) {
+            #box {
+                width:100%;
+                height:600px;
+                background-color:deepskyblue;
+            }
+        } /* mo end */
+
+        </style>
+</head>
+
+<body>
+
+    <div id="box"></div> 
+
+</body>
+</html>

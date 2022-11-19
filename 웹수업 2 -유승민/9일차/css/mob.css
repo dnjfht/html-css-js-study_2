@@ -1,0 +1,154 @@
+@media all and (max-width: 759px) and (min-width: 360px) {
+    
+    header {
+        display:none;
+    }
+    
+    #m_header, section, footer {
+        width:100%;
+        float:left;
+        position:relative;
+    }
+
+    /* #in_m_header, #container {
+        width:500px;
+        height:100%;
+        background-color:lightpink;
+        margin:0 auto;
+    } */
+
+    /* 공통영역 end */
+
+    #wrap {
+        width:100%;
+    }
+
+    #m_header {
+        height:60px;
+        background-color:lightpink;
+
+        text-align:center;
+    }
+
+    #in_m_header {
+        padding:15px 0;
+        box-sizing:border-box;
+        text-align:center;
+    }
+
+    #m_logo {
+        width:80px;
+        height:30px;
+        background-color:palevioletred;
+        margin:0 auto 0 auto;
+
+        font: 900 15px/30px '';
+    }
+
+    #m_logo>a {
+        color:white;
+    }
+
+    #m_menu_wrap {
+        width:100%;
+        height:0;
+        overflow:hidden;
+        background-color:deeppink;
+
+        font: 400 14px/50px '';
+
+        position:absolute;
+        top:60px;
+        left:0;
+
+        z-index:99;
+
+        transition-duration:1s;
+    }
+
+    #m_menu_wrap>li {
+        width:100%;
+        height:20%;
+        border-bottom:1px solid white;
+        padding:5px 0;
+        box-sizing:border-box;
+        float:left;
+
+        line-height:114px;
+    }
+
+    #m_menu_wrap>li>a {
+        color:white;
+    }
+
+    #m_menu_wrap>li:hover {
+        background-color:mediumvioletred;
+        cursor:pointer;
+    }
+
+    input { display:none; }
+
+    label {
+        width:30px;
+        height:30px;
+        background-color:palevioletred;
+        display:block;
+        
+        text-align:center;
+        font: 700 14px/30px '';
+        color:white;
+
+        cursor:pointer;
+
+        position:absolute;
+        top:15px;
+        right:15px;
+
+        z-index:999;
+    }
+
+    #btn:checked~#m_menu_wrap {
+        height:570px;
+    }
+    
+    /* header end */
+
+    #section_1 {
+        height:300px;
+        background-color:aquamarine;
+        margin:30px 0;
+    }
+    /* section_1 end */
+
+    #section_2 {
+        background-color:lightcyan;
+    }
+
+    #top_wrap, #bottom_wrap {
+        display:none;
+    }
+
+    #m_section_2_wrap {
+        width:100%;
+        height:570px;
+        background-color:lightpink;
+        margin-bottom:30px;
+    }
+
+    #m_section_2_wrap>li {
+        width:100%;
+        height:50px;
+        background-color:palevioletred;
+        margin-bottom:15px;
+    }
+
+    /* section_2 end */
+
+    footer {
+        height:80px;
+        background-color:coral;
+    }
+
+    /* footer end */
+
+} 

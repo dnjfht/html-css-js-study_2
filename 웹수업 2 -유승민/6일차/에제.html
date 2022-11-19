@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에제</title>
+    <style>
+
+        * { padding:0; margin:0; }
+        a { color:black; text-decoration:none; }
+        ul { list-style:none; }
+
+        #wrap {
+            width:100%;
+            text-align:center;
+        }
+
+        header {
+            width:100%;
+            height:100px;
+            background-color:rgba(0,0,0,0.7);
+
+            position:fixed;
+            top:0;
+            left:0;
+
+            text-align:center;
+            line-height:100px;
+            font:900 22px/100px '';
+
+            z-index:99;
+        }
+
+        #in_header { 
+            width:1200px;
+            height:100%;
+            margin:0 auto;
+        }
+
+        #logo { 
+            float:left;
+            width:150px;
+            height:100%;
+        }
+
+        #menu_wrap {
+            float:right;
+            width:800px;
+            height:100%;
+        }
+
+        #menu_wrap>li {
+            float:left;
+            width:20%;
+            height:100%;
+            font-size:18px;
+        }
+
+        header a {
+            color:white;
+        }
+
+        #section_1 {
+            width:100%;
+            height:800px;
+            float:left;
+            position:relative;
+        }
+
+        video { 
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .title_wrap {
+            width:auto;
+            background-color:rgba(0,0,0,0.7);
+            padding:5px 15px 15px 15px;
+            box-sizing:border-box;
+
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-left:-320px;
+            margin-top:-61.5px;
+
+            text-align:center;
+            color:white;
+        }
+
+        .title_wrap>h1 {
+            font-size:50px;
+            margin-bottom:10px;
+        }
+
+        .title_wrap>p {
+            font-size:20px;
+        }
+
+        #section_2 {
+            width:100%;
+            float:left;
+            padding:100px 0;
+        }
+
+        #container {
+            width:1200px;
+            height:400px;
+            margin:0 auto;
+        }
+
+        .con {
+            width:380px;
+            height:100%;
+            margin-right:30px;
+            float:left;
+            background-color:deeppink;
+        }
+
+        .con:last-child {
+            margin-right:0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header>
+            <div id="in_header">
+                <div id="logo"><a href="#">logo</a></div>
+                <ul id="menu_wrap">
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="section_1">
+            <video src="video/vid1.mp4" autoplay muted loop></video>
+                <div class="title_wrap">
+                    <h1>HTML5 Video Tag</h1>
+                    <p>웹퍼블리싱 멀티미디어 요소 비디오태그를 알아봅시다</p>
+                </div>
+        </section>
+
+        <section id="section_2">
+            <div id="container">
+                <div class="con"></div>
+                <div class="con"></div>
+                <div class="con"></div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

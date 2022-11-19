@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/note.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/mob.css">
+    <!-- <style>
+
+        * { padding:0; margin:0; }
+        a { color:black; text-decoration:none; }
+        ul { list-style:none; }
+
+        @media all and (min-width:1200px) {
+            #wrap {
+                width:1200px;
+                margin:0 auto;
+            }
+
+            header {
+                width:1200px;
+                height:80px;
+                background-color:lightpink;
+                float:left;
+                padding:15px 20px;
+                box-sizing:border-box;
+
+                text-align:center;
+            }
+
+            #logo {
+                width:150px;
+                height:50px;
+                background-color:palevioletred;
+                float:left;
+                font:500 18px/50px '';
+            }
+
+            #menu {
+                width:900px;
+                height:50px;
+                background-color:cornflowerblue;
+                float:right;
+
+                font:500 18px/50px '';
+            }
+
+            #menu>li {
+                width:20%;
+                height:100%;
+                float:left;
+            }
+
+            section {
+                width:100%;
+            }
+
+            #section_1 {
+                height:300px;
+                background-color:gold;
+                float:left;
+                margin:30px 0;
+            }
+
+            #section_2 {
+                height:260px;
+                background-color:lightpink;
+                float:left;
+            }
+
+            .con {
+                height:100px;
+                background-color:deeppink;
+                float:left;
+                margin-right:15px;
+                margin-bottom:30px;
+            }
+
+            .con:nth-child(1), .con:nth-child(2), .con:nth-child(3) {
+                width:390px;
+            }
+
+            .con:nth-child(3) {
+                margin-right:0;
+            }
+
+            .con:nth-child(4), .con:nth-child(5), .con:nth-child(6), .con:nth-child(7), .con:nth-child(8), .con:nth-child(9) {
+                width:187.5px;
+            }
+
+            .con:nth-child(9) {
+                margin-right:0;
+            }
+
+            footer {
+                width:100%;
+                height:80px;
+                background-color:deepskyblue;
+                float:left;
+            }
+
+
+        } /* pc ver */
+
+        @media all and (max-width:1199px) and (min-width:960px) {
+            #wrap {
+                width:960px;
+                margin:0 auto;
+            }
+
+            header {
+                width:960px;
+                height:160px;
+                background-color:lightpink;
+                float:left;
+                padding:15px 0;
+                box-sizing:border-box;
+
+                text-align:center;
+            }
+
+            #logo {
+                width:150px;
+                height:50px;
+                background-color:palevioletred;
+                margin:0 auto;
+                font:500 18px/50px '';    
+            }
+
+            #menu {
+                width:960px;
+                height:50px;
+                background-color:cornflowerblue;
+                margin-top:30px;
+
+                font:500 18px/50px '';
+            }
+
+            #menu>li {
+                width:20%;
+                height:100%;
+                float:left;
+            }
+
+            section {
+                width:100%;
+            }
+
+            #section_1 {
+                height:300px;
+                background-color:gold;
+                float:left;
+                margin:30px 0;
+            }
+
+            #section_2 {
+                height:260px;
+                background-color:lightpink;
+                float:left;
+            }
+
+            .con {
+                height:100px;
+                background-color:deeppink;
+                float:left;
+                margin-right:15px;
+                margin-bottom:30px;
+            }
+
+            .con:nth-child(1), .con:nth-child(2), .con:nth-child(3) {
+                width:310px;
+            }
+
+            .con:nth-child(3) {
+                margin-right:0;
+            }
+
+            .con:nth-child(4), .con:nth-child(5), .con:nth-child(6), .con:nth-child(7), .con:nth-child(8), .con:nth-child(9) {
+                width:147.5px;
+            }
+
+            .con:nth-child(9) {
+                margin-right:0;
+            }
+
+            footer {
+                width:100%;
+                height:80px;
+                background-color:deepskyblue;
+                float:left;
+            }
+
+        } /* note ver */
+
+        @media all and (max-width:959px) and (min-width:760px) {
+            #wrap {
+                width:760px;
+                margin:0 auto;
+            }
+
+            header {
+                width:760px;
+                height:160px;
+                background-color:lightpink;
+                float:left;
+                padding:15px 0;
+                box-sizing:border-box;
+
+                text-align:center;
+            }
+
+            #logo {
+                width:150px;
+                height:50px;
+                background-color:palevioletred;
+                margin:0 auto;
+                font:500 18px/50px '';    
+            }
+
+            #menu {
+                width:760px;
+                height:50px;
+                background-color:cornflowerblue;
+                margin-top:30px;
+
+                font:500 18px/50px '';
+            }
+
+            #menu>li {
+                width:20%;
+                height:100%;
+                float:left;
+            }
+
+            section {
+                width:100%;
+            }
+
+            #section_1 {
+                height:300px;
+                background-color:gold;
+                float:left;
+                margin:30px 0;
+            }
+
+            #section_2 {
+                height:605px;
+                background-color:lightpink;
+                float:left;
+            }
+
+            .con {
+                height:100px;
+                background-color:deeppink;
+                float:left;
+                margin-bottom:15px;
+            }
+
+            .con:nth-child(1), .con:nth-child(2), .con:nth-child(3) {
+                width:100%;
+            }
+
+            .con:nth-child(3) {
+                margin-bottom:30px;
+            }
+
+            .con:nth-child(4), .con:nth-child(5), .con:nth-child(6), .con:nth-child(7), .con:nth-child(8), .con:nth-child(9) {
+                width:243.333px;
+                margin-right:15px;
+                
+            }
+
+            .con:nth-child(7), .con:nth-child(8), .con:nth-child(9) {
+                margin-bottom:0;
+            }
+
+            .con:nth-child(6), .con:nth-child(9) {
+                margin-right:0;
+            }
+
+            footer {
+                width:100%;
+                height:80px;
+                background-color:deepskyblue;
+                float:left;
+        }
+    } /* tab ver */ -->
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- <div id="wrap">
+        <header>
+            <div id="logo">logo</div>
+
+            <ul id="menu">
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+        </header>
+
+        <section id="section_1"></section>
+
+        <section id="section_2">
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+            <div class="con"></div>
+        </section>
+
+        <footer></footer>
+    </div> -->
+
+    <div id="wrap">
+
+        <header>
+            <div id="in_header">
+                <div id="logo"><a href="#">logo</a></div>
+                <ul id="menu_wrap">
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="m_header">
+            <div id="in_m_header">
+                <div id="m_logo"><a href="#">logo</a></div>
+
+                <input type="checkbox" id="btn">
+                
+                <ul id="m_menu_wrap">
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                </ul>..
+
+                <label for="btn">=</label>
+            </div>
+        </div>
+
+        <section id="section_1"></section>
+        <!--section_1 end-->
+    
+        <section id="section_2">
+            <div id="container">
+                <ul id="top_wrap">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <ul id="bottom_wrap">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <ul id="m_section_2_wrap">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <!--section_2 end-->
+
+        <footer></footer>
+    </div>
+
+</body>
+</html>

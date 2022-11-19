@@ -1,0 +1,173 @@
+@media all and (min-width: 1200px) {
+
+    * { margin:0; padding:0; }
+    a { color:black; text-decoration:none; }
+    ul { list-style:none; }
+
+    #m_header {
+        display:none; 
+    }
+
+    header, section, footer {
+        width:100%;
+        float:left;
+        position:relative;
+    }
+
+    #in_header, #container {
+        width:1200px;
+        height:100%;
+        margin:0 auto;
+    }
+    /* 공통영역 end */
+
+    #wrap {
+        width:100%;
+    }
+
+    header {
+        width:100%;
+        height:100px;
+        background-color:pink;
+
+        z-index:99;
+    }
+
+    #logo {
+        width:150px;
+        height:100%;
+        background-color:crimson;
+        float:left;
+
+        font: 700 20px/100px '';
+        text-align:center;
+    }
+
+    #menu_wrap {
+        width:960px;
+        height:80px;
+        background-color:rgb(255, 87, 123);
+        float:right;
+
+        font: 400 16px/80px '';
+        text-align:center;
+    }
+
+    #menu_wrap>li {
+        width:20%;
+        height:100%;
+        float:left;
+    }
+
+    .sub_menu {
+        width:100%;
+        height:0;
+        background-color:lightpink;
+        overflow:hidden;
+        transition-duration:0.5s;
+
+        font: 400 14px/60px '';
+    }
+
+    .sub_menu>li {
+        width:100%;
+        height:60px;
+        border-bottom:1px solid gray;
+        box-sizing:border-box;
+    }
+
+    .sub_menu>li:hover {
+        background-color:rgb(255, 91, 173);
+        transition-duration:0.5s;
+    }
+
+    #menu_wrap>li:hover {
+        background-color:rgb(255, 0, 128);
+    }
+
+    .top_menu:hover>.sub_menu {
+        height:180px;
+    }
+
+    input { display:none; }
+
+    label { display:none; }
+
+    /* header end */
+
+    #section_1 {
+        height:300px;
+        background-color:deepskyblue;
+    }
+    /* section_1 end */
+
+    #section_2 {
+        height:220px;
+        background-color:pink;
+        z-index:99;
+    }
+
+    #container {
+        padding:30px 0 0 0;
+        box-sizing:border-box;
+    }
+
+    #top_wrap {
+        width:100%;
+        height:100px;
+        background-color:rgb(255, 87, 123);
+        margin-bottom:30px;
+    }
+
+    #top_wrap>li {
+        width:380px;
+        height:100%;
+        background-color:cornflowerblue;
+        float:left;
+        margin-right:30px;
+    }
+
+    #top_wrap>li:last-child {
+        margin-right:0;
+    }
+
+    #bottom_wrap {
+        width:100%;
+        overflow:hidden;
+        background-color: rgb(255, 194, 207);
+    }
+
+    .box {
+        width:50%;
+        height:100%;
+        background-color:rgb(255, 87, 123);
+        float:left;
+    }
+
+    .box>li {
+        width:190px;
+        height:30px;
+        background-color:cornflowerblue;
+        float:left;
+        margin-right:15px;
+        transition-duration:0.5s;
+
+        box-sizing: border-box;
+    }
+
+    .box>li:last-child {
+        margin-right:0;
+    }
+
+    .box>li:hover {
+        height:100px;
+    }
+
+    /* section_2 end */
+
+    footer {
+        height:100px;
+        background-color:crimson;
+    }
+
+}

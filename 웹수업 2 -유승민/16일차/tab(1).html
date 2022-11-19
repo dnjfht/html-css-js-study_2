@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <style>
+
+        * { margin:0; padding:0; }
+        a { color:black; text-decoration:none; }
+        ul { list-style:none; }
+        img { display:none; border:0; }
+
+        #wrap {
+            width:400px;
+            height:600px;
+            background-color:lightblue;
+            margin:0 auto;
+            border:10px solid black;
+        }
+
+        #btn_wrap {
+            width:100%;
+            height:100px;
+            background-color:lightpink;
+        }
+
+        input {
+            display:none;
+        }
+
+        label {
+            display:block;
+
+            width:25%;
+            height:100%;
+            background-color:deeppink;
+
+            float:left;
+
+            font:400 22px/100px '';
+            text-align:center;
+        }
+
+        .con {
+            display:none;
+
+            width:400px;
+            height:500px;
+            
+            float:left;
+
+            font: 400 80px/500px '';
+            text-align:center;
+        }
+
+        #con_1 {
+            background-color:rgb(255, 172, 188);
+        }
+
+        #con_2 {
+            background-color:rgb(255, 135, 159);
+        }
+
+        #con_3 {
+            background-color:rgb(255, 83, 117);
+        }
+
+        #con_4 {
+            background-color:rgb(201, 4, 43);
+        }
+
+        #tab_1:checked~#con_1 {
+            display:block;
+        }
+
+        #tab_2:checked~#con_2 {
+            display:block;
+        }
+
+        #tab_3:checked~#con_3 {
+            display:block;
+        }
+
+        #tab_4:checked~#con_4 {
+            display:block;
+        }
+
+        #tab_1:checked~#btn_wrap>#btn_1 {
+            background-color:rgb(255, 172, 188);
+        }
+
+        #tab_2:checked~#btn_wrap>#btn_2 {
+            background-color:rgb(255, 135, 159);
+        }
+
+        #tab_3:checked~#btn_wrap>#btn_3 {
+            background-color:rgb(255, 83, 117);
+        }
+
+        #tab_4:checked~#btn_wrap>#btn_4 {
+            background-color:rgb(201, 4, 43);
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div id="wrap">
+
+        <input type="radio" id="tab_1" name="tab" checked>
+        <input type="radio" id="tab_2" name="tab">
+        <input type="radio" id="tab_3" name="tab">
+        <input type="radio" id="tab_4" name="tab">
+
+        <div id="btn_wrap">
+            
+            <label for="tab_1" id="btn_1">1</label>
+            <label for="tab_2" id="btn_2">2</label>
+            <label for="tab_3" id="btn_3">3</label>
+            <label for="tab_4" id="btn_4">4</label>
+
+        </div>
+
+        <div class="con" id="con_1">첫 번째</div>
+        <div class="con" id="con_2">두 번째</div>
+        <div class="con" id="con_3">세 번째</div>
+        <div class="con" id="con_4">네 번째</div>
+
+    </div>
+
+</body>
+</html>

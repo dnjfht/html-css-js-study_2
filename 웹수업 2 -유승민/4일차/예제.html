@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+    <style>
+
+        * { margin:0; padding:0; }
+        img { display:block; border:0; }
+
+        #out_box {
+            width:400px;
+            height:600px;
+            margin:0 auto;
+            border:10px solid black;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .in_box {
+            width:100%;
+            height:100%;
+            background-color:aqua;
+
+            position:absolute;
+            top:0;
+            left:0;
+
+            line-height:600px;
+            text-align:center;
+        }
+
+        .in_box>img {
+            width:100%;
+            height:100%;
+        }
+
+        #text_box {
+            transform:scale(0) rotatez(0);
+            transition-duration:1s;
+        }
+
+        #out_box:hover>#text_box{
+            transform:scale(1) rotateZ(360deg);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="out_box">
+        <div class="in_box" id="img_box">
+            <img src="b.jpg" alt="계란후라이">
+        </div>
+
+        <div class="in_box" id="text_box">
+            <h1>계란후라이~~</h1>
+        </div>
+    </div>
+
+</body>
+</html>

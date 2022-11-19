@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video 예제</title>
+    <style>
+
+        * { margin:0; padding:0; }
+        ul { list-style:none; }
+        a { text-decoration:none; color:black; }
+        img { display:block; border:0; }
+
+        #wrap {
+            width:100%;
+        }
+
+        header {
+            width:100%;
+            height:100px;
+            background-color:rgba(0,0,0,0.8);
+
+            position:fixed;
+            top:0;
+            left:0;
+
+            z-index:999;
+        }
+
+        #in_header {
+            width:1200px;
+            height:100%;
+            margin:0 auto;
+            padding:30px 0;
+            box-sizing:border-box;
+
+            position:relative;
+        }
+
+        #logo {
+            width:auto;
+
+            float:left;
+        }
+
+        #logo>a {
+            font-size:24px;
+            color:white;
+            font-weight:700;
+            line-height:40px;
+        }
+
+        #menu_wrap {
+            width:auto;
+
+            float:right;
+        }
+
+        #menu_wrap>li {
+            width:auto;
+
+            float:left;
+        }
+
+        #menu_wrap>li>a {
+            width:20%;
+            margin-right:100px;
+
+            color:white;
+            font-size:20px;
+            line-height:40px;
+            font-weight:400;
+        }
+
+        #menu_wrap>li:last-child>a {
+            margin-right:0;
+        }
+
+        #section_1 {
+            width:100%;
+            height:800px;
+
+            float:left;
+
+            position:relative;
+        }
+
+        video {
+            width:100%;
+            height:100%;
+            object-fit:cover;
+
+            position:absolute;
+            top:0;
+            left:0;
+        }
+
+        #text_wrap {
+            width:auto;
+            padding:16px;
+            box-sizing:border-box;
+            background-color:rgba(0,0,0,0.8);
+
+            position:absolute;
+            top:50%;
+            margin-top:-61.5px;
+            left:50%;
+            margin-left:-259px;
+
+            z-index:999;
+
+            text-align:center;
+        }
+
+        #text_wrap>h1 {
+            font-size:50px;
+            color:white;
+            line-height:50px;
+            font-weight:700;
+        }
+
+        #text_wrap>p {
+            margin-top:26px;
+
+            font-size:20px;
+            color:white;
+            line-height:20px;
+            font-weight:200;
+        }
+
+        #section_2 {
+            width:100%;
+
+            float:left;
+        }
+
+        #container {
+            width:1200px;
+            margin:0 auto;
+            padding:100px 0;
+            box-sizing:border-box;
+
+            overflow:hidden;
+        }
+
+        .con {
+            width:366.666px;
+            height:400px;
+            background-color:aqua;
+            margin-right:50px;
+
+            float:left;
+        }
+
+        .con:last-child {
+            margin-right:0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header>
+
+            <div id="in_header">
+
+                <div id="logo">
+                    <a href="#">
+                        logo
+                    </a>
+                </div>
+                <!-- logo end -->
+
+                <ul id="menu_wrap">
+
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+
+                </ul>
+                <!-- menu_wrap end -->
+
+            </div>
+            <!-- in_header end -->
+
+        </header>
+
+        <section id="section_1">
+
+            <video src="./video/vid1.mp4" autoplay muted loop></video>
+
+            <div id="text_wrap">
+                <h1>HTML5 Video Tag</h1>
+                <p>웹퍼블리싱 멀티미디어 요소 비디오태그를 알아봅시다</p>
+            </div>
+            <!-- text_wrap end -->
+
+        </section>
+        <!-- section_1 end -->
+
+        <section id="section_2">
+
+            <div id="container">
+
+                <div class="con" id="con_1"></div>
+                <div class="con" id="con_2"></div>
+                <div class="con" id="con_3"></div>
+
+            </div>
+            <!-- container end -->
+
+        </section>
+        <!-- section_2 end -->
+
+    </div>
+    <!-- wrap end -->
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 비율</title>
+    <style>
+        
+        * { margin:0; padding:0; }
+        img { display:block; border:0; }
+        
+        /* * 이미지가 들어갔을 때 비율대로 줄이는 방법
+        => 이미지는 부모 안쪽으로 항상 감싸져 있어야 됨 (상황에 따라 다름)
+        => 이미지 부모들은 % 단위로 맞추고
+        이미지는 부모 가로 크기에 맞게 이미지 가로값은 100%
+        / 높이값은 없음 (이미지 자체의 높이값 가져옴, height:auto 가능)
+        => 단, 이미지 부모의 높이값은 뺄것(auto)
+        => 결론적으로 부모의 높이값은 이미지 비율에 맞춰 들어감 */
+        
+        /* * 주의사항
+        => 만들어지는 레이아웃 모양에 따라 부모 높이값 상실할 수 있음
+        (이때 부모한테 overflow:hidden)
+        => 이미지에게 포지션 넣었을 때 적용이 안됨
+        (부모가 자식 이미지 높이를 알 수 없음) */
+        
+        /* * img 태그와 background-img의 차이
+        => backgroundimg는 제품이 중앙에 있고,
+        양옆이 잘려도 괜찮은 이미지일 때 사용
+        (이미지 비율대로 줄이기 불가능)
+        => img 태그는 제품이 중앙에 아닌 사방에 있고,
+        양옆이 잘리면 안되는 경우에 사용
+        (이미지 비율대로 줄이기 가능) */
+        
+        #wrap {
+            width:/* 700px */ 36.458%;
+            /* = 700 / 1920 * 100 */
+            height:400px;
+            /* border:10px solid black; */
+            margin:0 auto;
+        }
+
+        #img_box {
+            width:100%;
+            background-color:firebrick;
+        }
+
+        #img_box>img {
+            width:100%;
+        }
+
+        h3 {
+            width:100%;
+            height:50px;
+            background-color:lightblue;
+            text-align:center;
+            line-height:50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div id="img_box">
+            <img src="a.jpg" alt="">
+        </div>
+        <h3>타이틀</h3>
+    </div>
+
+</body>
+</html>

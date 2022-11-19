@@ -1,0 +1,303 @@
+@media all and (max-width:759px) {
+
+    * { padding:0; margin:0; }
+    a { color:black; text-decoration:none; }
+    ul { list-style:none; }
+    image { display:block; line-height:0; }
+
+    header {
+        display:none;
+    }
+
+    #m_header, section, footer {
+        width:100%;
+        float:left;
+        /* background-color:white; */
+    }
+
+    #m_in_header {
+        width:100vw;
+
+        position:relative;
+    }
+
+    #container, #m_in_footer {
+        width:/* 660px */ 86.842vw;
+        height:100%;
+        /* background-color:rgb(255, 247, 250); */
+        margin:0 auto;
+        position:relative;
+    }
+    /* 공통영역 end */
+
+    #wrap {
+        width:100%;
+    }
+
+    #m_header {
+        height:/* 60px */ 7.894vw;
+        background-color:white;
+        box-shadow:0 /* 5px */ 0.657vw /* 10px */ 1.315vw 0 rgb(50 50 50 / 10%);
+
+        position:fixed;
+        top:0;
+        left:0;
+
+        z-index:999;
+    }
+
+    #m_logo {
+        width:/* 230px */ 30.263vw;
+        height:/* 30px */ 3.947vw;
+        margin:0 auto;
+
+        line-height:/* 80px */ 10.526vw;
+    }
+
+    #m_logo img {
+        width:100%;
+        height:100%;
+    }
+
+    #m_menu {
+        width:100vw;
+        height:0;
+        background-color:white;
+        overflow:hidden;
+
+        position:absolute;
+        top:/* 60px */ 7.894vw;
+        left:0;
+
+        font: 700 /* 20px */ 2.631vw //* 80px */ 10.526vw '';
+        text-align:center;
+
+        transition-duration:0.5s;
+    }
+
+    #m_menu>li {
+        width:100vw;
+        height:/* 80px */ 10.526vw;
+        border-bottom:1px solid #ccc;
+    }
+
+    #m_menu>li:last-child {
+        border-bottom:none;
+    }
+
+    #m_menu>li:hover {
+        background-color:rgb(255, 224, 224);
+    }
+
+    #menu>li>a {
+        color:dimgray;
+    }
+
+    input { display:none; }
+
+    label {
+        width:/* 50px */ 6.578vw;
+        height:/* 50px */ 6.578vw;
+        display:block;
+        
+        font:400 /* 18px */ 2.368vw //* 32px */ 4.210vw '';
+        text-align:center;
+
+        cursor:pointer;
+
+        position:absolute;
+        top:/* 15px */ 1.973vw;
+        left:/* 15px */ 1.973vw;
+
+        z-index:999;
+    }
+
+    #btn:checked~#m_menu {
+        height:/* 320px */ 42.105vw;
+    }
+
+    #section_1 {
+        height:/* 900px */ 118.421vw;
+
+        background-image:url("../images/m_main_visual.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+    #section_2 {
+        background-color:rgb(243, 243, 243);
+        padding:/* 110px */ 14.473vw 0;
+    }
+
+    #section_2_title p, #section_3_title p, #section_5_title p, #section_6_title p {
+        width:/* 600px */ 78.947vw;
+        height:/* 7px */ 9.210vw;
+        margin:0 auto;
+
+        font-size:/* 40px */ 5.263vw;
+        text-align:center;
+        line-height:/* 40px */ 5.263vw;
+    }
+
+    #section_2_title span, #section_3_title span, #section_5_title span, #section_6_title span {
+        font-weight:700;
+    }
+
+    #intro>li {
+        width:/* 660px */ 86.842vw;
+        margin-bottom:/* 20px */ 2.631vw;
+        float:left;
+    }
+
+    #intro>li:nth-child(4) {
+        margin-bottom:0;
+    }
+
+    #intro>li img {
+        width:100%;
+        height:100%;
+    }
+
+    #section_3 {
+        padding:/* 110px */ 14.473vw 0 /* 140px */ 18.421vw 0;
+    }
+
+    #items {
+        width:/* 660px */ 86.842vw;
+        margin-top:/* 20px */ 2.631vw;
+    }
+
+    #items>li {
+        width: /* 660px */ 86.842vw;
+        margin-bottom:/* 100px */ 13.157vw;
+        float:left;
+    }
+
+    #img_box {
+        width:100%;
+        overflow:hidden;
+    }
+
+    #items>li:nth-child(6) {
+        margin-bottom:0;
+    }
+
+    #img_box img {
+        width:100%;
+        height:100%;
+
+        transition-duration:0.5s;
+    }
+
+    #img_box:hover>img {
+        transform:scale(1.1);
+        opacity:0.5;
+    }
+
+    #items_intro {
+        text-align:center;   
+    }
+
+    .items_title {
+        font:700 /* 24px */ 3.157vw //* 24px */ 3.157vw '';
+    }
+    
+    .items_detail {
+        font:300 /* 20px */ 2.631vw //* 23px */ 3.026vw '';
+        margin-top:/* 15px */ 1.973vw;
+    }
+
+    #section_4 {
+        height:/* 600px */ 78.947vw;
+
+        background-image:url("../images/section_4_img.jpg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+    #section_5 {
+        padding:/* 110px */ 14.473vw 0;
+    }
+
+    #instagram {
+        width:/* 660px */ 86.842vw;
+    }
+
+    #instagram>li {
+        width:/* 220px */ 28.947vw;
+        height:28.947vw;
+        float:left;
+    }
+
+    #instagram>li img {
+        width:100%;
+        height:100%;
+    }
+
+    #section_6 {
+        background-color:rgb(243, 243, 243);
+        padding:/* 110px */ 14.473vw 0;
+    }
+
+    #news {
+        width:/* 660px */ 86.842vw;
+    }
+
+    #news>li {
+        width:/* 660px */ 86.842vw;
+        margin-bottom:/* 40px */ 5.263vw;
+        float:left;
+    }
+
+    #news>li:last-child {
+        margin-bottom:0;
+    }
+
+    #news_intro {
+        margin-top:/* 30px */ 3.947vw;
+        text-align:center;   
+    }
+
+    .news_title {
+        font:700 /* 24px */ 3.157vw//* 24px */ 3.157vw '';
+    }
+    
+    .news_detail {
+        font:300 /* 15px */ 2.105vw//* 30px */ 3.947vw '';
+        padding:/* 12px */ 1.25vw;
+        box-sizing:border-box;
+    }
+
+    footer {
+        height:/* 150px */ 19.736vw;
+        background-color:#1c1c1c;
+    }
+
+    footer p {
+        color:rgb(194, 194, 194);
+
+        font:300 /* 16px */ 2.105vw //* 150px */ 19.736vw '';
+        text-align:center;
+    }
+
+    #top_btn {
+        width:/* 80px */ 10.526vw;
+        height:/* 80px */ 10.526vw;
+        background-color:rgb(247, 137, 103);
+        
+        position:fixed;
+        bottom:/* 40px */ 5.263vw;
+        right:/* 40px */ 5.263vw;
+
+        font:600 /* 24px */ 3.157vw//* 80px */ 10.526vw '';
+        text-align:center;
+    }
+
+    #top_btn a {
+        color:white;
+        display:block;
+    }
+
+}

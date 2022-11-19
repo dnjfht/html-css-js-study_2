@@ -1,0 +1,121 @@
+@media all and (max-width: 959px) and (min-width: 760px) {
+    
+    #m_header {
+        display:none;
+    }
+    
+    header, section, footer {
+        width:100%;
+        float:left;
+        position:relative;
+    }
+
+    #in_header, #container {
+        width:760px;
+        height:100%;
+        background-color:lightgrey;
+        margin:0 auto;
+    }
+    /* 공통영역 end */
+
+    #wrap {
+        width:100%;
+    }
+
+    header {
+        height:150px;
+        background-color:lightblue;
+    }
+
+    #in_header {
+        padding:15px 20px;
+        box-sizing:border-box;
+        font: 900 22px/50px '';
+        text-align:center;
+    }
+
+    #logo {
+        width:150px;
+        height:50px;
+        background-color:crimson;
+        margin:0 auto 10px auto;
+    }
+
+    #menu_wrap {
+        width:100%;
+        height:50px;
+        background-color:gold;
+    }
+
+    #menu_wrap>li {
+        width:20%;
+        height:100%;
+        float:left;
+    }
+
+    /* header end */
+
+    #section_1 {
+        height:300px;
+        background-color:aquamarine;
+        margin:30px 0;
+    }
+    /* section_1 end */
+
+    #section_2 {
+        background-color:lightcyan;
+    }
+
+    #top_wrap {
+        height:330px;
+    }
+
+    #bottom_wrap {
+        height:230px;
+    }
+
+    #top_wrap, #bottom_wrap {
+        width:100%;
+        overflow:hidden;
+        background-color:lightsalmon;
+        margin-bottom:30px;
+    }
+
+    #top_wrap>li {
+        width:100%;
+    }
+
+    #bottom_wrap>li {
+        width:243.333px;
+        margin-right:15px;
+    }
+
+    #top_wrap>li, #bottom_wrap>li {
+        height:100px;
+        background-color:hotpink;
+        float:left;
+        margin-bottom:15px;
+    }
+
+    #bottom_wrap>li:nth-child(3), #bottom_wrap>li:nth-child(6) {
+        margin-right:0;
+    }
+
+    #m_section_2_wrap {
+        display:none;
+    }
+
+    input, label {
+        display:none;
+    }
+
+    /* section_2 end */
+
+    footer {
+        height:80px;
+        background-color:coral;
+    }
+
+    /* footer end */
+
+} 

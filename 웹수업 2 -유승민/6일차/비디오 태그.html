@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 태그</title>
+    <style>
+
+        * { padding:0; margin:0; }
+
+        h1 {
+            margin:50px 0 30px 0;
+        }
+
+        /* * video 태그
+        - video는 HTML 문서에 동영상을 삽입하는 태그 */
+
+        /* * 비디오 태그 속성
+        1. src
+        삽입할 비디오의 주소 */
+
+        /* 2. width, height (css로 지정 가능)
+        - 비디오의 너비와 높이 */
+
+        video {
+            width:1300px;
+            height:400px;
+            object-fit:cover;
+        }
+
+        /* 3. controls
+        - 오디오 재생에 관한 조절 장치를 보여줌
+        - playback, pause, resume, volume 등 */
+
+        /* 4. autoplay
+        - 비디오가 로드 되면 자동 실행
+        - IE9+, Chrome, FF, Safari, Opera 지원
+        - 2018 4월 이후 크롬 브라우저에서 소리가 나오는 동영상 자동 재생 되지 않음,
+        muted 처리시 자동 재생됨 */
+
+        /* 5. muted
+        비디오의 소리 음소거 결정. 쓰면 음소거 됨 */
+
+        /* 6. loop
+        - 비디오 반복 재생 */
+
+        /* * object-fit
+        => img, video, object, svg 같은 태그의 내용을
+        지정된 너비와 높이를 맞춰줌
+        => background-size 속성과 매우 유사
+        => 종류
+        - fill : 이미지 비율을 무시한 채로 강제로 크기를 늘려줌
+        - contain : 이미지 비율을 유지한 채로 부모 크기에 맞춰줌
+        - cover : 이미지 비율을 유지한 채로 부모 밖으로 넘치는 영역을 잘라줌 */
+
+    </style>
+</head>
+
+<body>
+
+    <h1>유튜브 영상 불러오기</h1>
+    <iframe width="684" height="480" src="https://www.youtube.com/embed/AbZH7XWDW_k?list=RDAbZH7XWDW_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>지도 불러오기</h1>
+    <!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1645402382614" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1645402382614",
+		"key" : "297pf",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.9905284405686!2d129.05445791491096!3d35.15685696615888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb6e1678f7ff%3A0x7bc6c334e233bc82!2z66Gv642w67Cx7ZmU7KCQIOu2gOyCsOuzuOygkA!5e0!3m2!1sko!2skr!4v1645402544954!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<h1>비디오 불러오기</h1>
+<video src="video/vid1.mp4"></video>
+
+<h1>비디오 컨트롤 장치 생성</h1>
+<video src="video/vid1.mp4" controls></video>
+
+<h1>비디오 자동 재생</h1>
+<video src="video/vid1.mp4" autoplay muted></video>
+
+<h1>비디오 반복 재생</h1>
+<video src="video/vid1.mp4" autoplay muted loop></video>
+
+</body>
+</html>
